@@ -9,6 +9,9 @@ export default function Lottery() {
     let refresh=()=>{
         setTicket(genTicket(3));
     }
+    let refresh2=()=>{
+        setTicket(genTicket(3));
+    }
 
     return (
         <div className="lottery">
@@ -18,7 +21,7 @@ export default function Lottery() {
                 <span>{ticket[1]}</span>
                 <span>{ticket[2]}</span>
             </div>
-            <button onClick={refresh}>Get new nos.</button><br />
+            <button onClick={refresh2}>Get new nos.</button><br />
             <h2>{isWinning && "You win!"}</h2>
             
         </div>
